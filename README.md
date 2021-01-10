@@ -1,4 +1,4 @@
-##Purpose of this repo
+## Purpose of this repo
 
 The repo demonstrates Jackson serialization vulnerability as described in:
  1. https://cowtowncoder.medium.com/on-jackson-cves-dont-panic-here-is-what-you-need-to-know-54cd0d6e8062
@@ -9,7 +9,7 @@ The exploitable vulnerability demonstrated here is: https://snyk.io/vuln/SNYK-JA
 
 ## What this repo contains
 * A vulnerable app, run using Micronaut web framework.
-* The app exposes two endpoints - POST to `/user`, and POST to `/org`. Both endpoints are vulnerable, see `AppController.java`
+* The app exposes two endpoints - POST to `/user`, and POST to `/org`. Both endpoints are vulnerable but the vulnerability is enabled in two different ways. See `AppController.java`
 
 
 ## How to run the exploit
