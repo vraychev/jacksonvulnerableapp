@@ -20,9 +20,10 @@ The exploitable vulnerability demonstrated here is: https://snyk.io/vuln/SNYK-JA
 * `realpath` unix command line utility (just to run the script)
 
 ### How to run on MacOS
-1. `mvn exec:exec` to run the Micronaut server
-2. `cd exploit && ./run_org_exploit.sh` 
+1. `mvn install`
+2. `mvn exec:exec` to run the Micronaut server
+3. `cd exploit && ./run_org_exploit.sh` 
 or
-3. `cd exploit && ./run_user_exploit.sh`
+4. `cd exploit && ./run_user_exploit.sh`
 
 You should see the calculator app popping up.
