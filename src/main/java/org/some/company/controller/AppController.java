@@ -34,7 +34,7 @@ public class AppController {
 
         Org newOrg = om.readValue(payload, Org.class);
 
-        System.out.println("Added new user with name:" + newOrg.name +
+        System.out.println("Added new org with name:" + newOrg.name +
                 " and id " + newOrg.id);
     }
 }
