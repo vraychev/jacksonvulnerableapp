@@ -11,6 +11,12 @@ import java.io.IOException;
 @Controller
 public class AppController {
 
+    @Get
+    @Produces(MediaType.TEXT_PLAIN)
+    public String index() {
+        return "Hello Michael!";
+    }
+
     // Vulnerable because User class uses JsonTypeInfo annotation and has field of type Object
     @Post(value = "/user", consumes = MediaType.APPLICATION_JSON)
     public void addUser(@Body String payload) throws IOException {
